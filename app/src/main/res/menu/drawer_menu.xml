@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
     tools:showIn="navigation_view"> <!-- optional: show drawer in actual form -->
 
     <!--  we can select single item and it will open fragment and it will stay selected-->

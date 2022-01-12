@@ -1,3 +1,11 @@
+
+Fragments/Dialogs - Android Programming:
+
+https://www.youtube.com/playlist?list=PLrnPJCHvNZuBkhcesO6DfdCghl6ZejVPc
+
+**********************************
+
+
 a toolbar is the more flexible version of actionbar
 
 *********************************
@@ -9,7 +17,7 @@ get rid of default action bar:
 
 2) remove for one particular activity
 
-style name="Theme.Navigation_Drawer_with_Fragments.NoActionBar">
+<style name="Theme.Navigation_Drawer_with_Fragments.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 </style>
@@ -18,10 +26,11 @@ finally add theme in manifest file for activity
 
 *********************************
 
-1) add depencies
+1) add depencies ( if needed )
+
 2) create drawer_menu.xml file                             in menu folder , ( create menu for drawer )
 
-3) create nav_header layout resource file in layouts folder
+3) create nav_header layout resource file                  in layouts folder
 
 android:theme="@style/ThemeOverlay.AppCompat.Dark"         make text of header white
 
@@ -52,6 +61,17 @@ android:layout_gravity="start"                 make drawer on the left ( we can 
 values -> new -> values resource file
 
 under version add 21 and press ok
+
+
+
+***********************************************
+
+
+right click layout -> new layout resource file -> fragment_message.xml
+
+now you can make other files using ctrl+c and ctrl+v
+
+
 
 
 
