@@ -3,15 +3,12 @@
 
 ### Developed By [Syed Nouman](https://github.com/NoumanShah042)
  
-## Description
-
-Navigation Drawer with the menu items open the fragments
-                                 
+                
 
 ## Screenshots
 
-* Add Activity Screen.
+* Navigation Drawer
 <img src="screenshots/a.png" width="300">
 
-* Todo List View.
+* Showing Fragment
 <img src="screenshots/b.png" width="300">
