@@ -1,0 +1,64 @@
+a toolbar is the more flexible version of actionbar
+
+*********************************
+
+get rid of default action bar:
+
+1) values-> styles.xml ->  remove for whole app
+<style name="Theme.Navigation_Drawer_with_Fragments" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+2) remove for one particular activity
+
+style name="Theme.Navigation_Drawer_with_Fragments.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+</style>
+
+finally add theme in manifest file for activity
+
+*********************************
+
+1) add depencies
+2) create drawer_menu.xml file                             in menu folder , ( create menu for drawer )
+
+3) create nav_header layout resource file in layouts folder
+
+android:theme="@style/ThemeOverlay.AppCompat.Dark"         make text of header white
+
+
+4) In activity_main.xml  creater drawer layout 
+
+android:fitsSystemWindows="true"                this will make the navgation drawer draw under the status bar at the top of our screen
+
+android:layout_height="?attr/actionBarSize"    to set the height to Action Bar size
+					       actionBarSize : Size of the Action Bar, including the contextual bar used to present Action Modes
+
+
+android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"        this will make theme similar to action bar
+
+
+android:elevation="4dp"                         this will draw a shadow below our view  ( works for API > 21 )
+
+
+android:layout_gravity="start"                 make drawer on the left ( we can change place of drawer)
+	                                       also add -- tools:openDrawer="start"  -- to Main DrawerLayout  to work 
+
+
+
+5) code in mainactivity.java file
+
+6) make style.xml file that applied for api level 21 or highr  -------  for transparent status bar
+
+values -> new -> values resource file
+
+under version add 21 and press ok
+
+
+
+
+
+
+
+
+
+
